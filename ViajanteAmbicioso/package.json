@@ -1,0 +1,12 @@
+{
+  "name": "viajante-ambicioso",
+  "version": "0.0.0",
+  "description": "ViajanteAmbicioso",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  },
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
