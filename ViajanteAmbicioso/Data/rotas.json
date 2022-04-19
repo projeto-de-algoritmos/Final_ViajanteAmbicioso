@@ -1,0 +1,157 @@
+[
+  {
+    "Aracajú:Maceió": 294,
+    "Aracajú:Salvador": 356
+  },
+  {
+    "Belém:São Luis": 806,
+    "Belém:Palmas": 1283,
+    "Belém:Cuiabá": 2941,
+    "Belém:Manaus": 5298,
+    "Belém:Macapá": 2173,
+    "Belém:Boa Vista": 6083
+  },
+  {
+    "Macapá:Belém": 2173
+  },
+  {
+    "Belo Horizonte:Rio de Janeiro": 434,
+    "Belo Horizonte:Vitória": 524,
+    "Belo Horizonte:São Paulo": 586,
+    "Belo Horizonte:Campo Grande": 1453,
+    "Belo Horizonte:Goiânia": 906,
+    "Belo Horizonte:Brasília": 716,
+    "Belo Horizonte:Salvador": 1372
+  },
+  {
+    "Boa Vista:Manaus": 785,
+    "Boa Vista:Belém": 6083
+  },
+  {
+    "Brasília:Belo Horizonte": 716,
+    "Brasília:Goiânia": 209
+  },
+  {
+    "Campo Grande:Cuiabá": 694,
+    "Campo Grande:Goiânia": 934,
+    "Campo Grande:Belo Horizonte": 1453,
+    "Campo Grande:São Paulo": 1014,
+    "Campo Grande:Curitiba": 991
+  },
+  {
+    "Cuiabá:Porto Velho": 1456,
+    "Cuiabá:Manaus": 2357,
+    "Cuiabá:Belém": 2941,
+    "Cuiabá:Palmas": 1784,
+    "Cuiabá:Goiânia": 934,
+    "Cuiabá:Campo Grande": 694
+  },
+  {
+    "Curitiba:São Paulo": 408,
+    "Curitiba:Campo Grande": 991,
+    "Curitiba:Florianópolis": 300
+  },
+  {
+    "Florianópolis:Curitiba": 300,
+    "Florianópolis:Porto Alegre": 476
+  },
+  {
+    "Fortaleza:Teresina": 634,
+    "Fortaleza:Recife": 800,
+    "Fortaleza:João Pessoa": 688,
+    "Fortaleza:Natal": 537
+  },
+  {
+    "Goiânia:Belo Horizonte": 906,
+    "Goiânia:Brasília": 209,
+    "Goiânia:Campo Grande": 935,
+    "Goiânia:Cuiabá": 934,
+    "Goiânia:Palmas": 874,
+    "Goiânia:Salvador": 1643
+  },
+  {
+    "João Pessoa:Natal": 185,
+    "João Pessoa:Teresina": 1224,
+    "João Pessoa:Recife": 120
+  },
+  {
+    "Maceió:Aracajú": 294,
+    "Maceió:Recife": 256,
+    "Maceió:Salvador": 580
+  },
+  {
+    "Manaus:Belém": 5298,
+    "Manaus:Boa Vista": 785,
+    "Manaus:Cuiabá": 2357,
+    "Manaus:Porto Velho": 888,
+    "Manaus:Rio Branco": 1400
+  },
+  {
+    "Natal:Fortaleza": 537,
+    "Natal:João Pessoa": 185
+  },
+  {
+    "Palmas:Belém": 1283,
+    "Palmas:Cuiabá": 1784,
+    "Palmas:Goiânia": 874,
+    "Palmas:Salvador": 1500,
+    "Palmas:Teresina": 1110,
+    "Palmas:São Luis": 1250
+  },
+  {
+    "Porto Alegre:Florianópolis": 476
+  },
+  {
+    "Porto Velho:Manaus": 901,
+    "Porto Velho:Cuiabá": 1456
+  },
+  {
+    "Recife:Fortaleza": 800,
+    "Recife:Teresina": 1137,
+    "Recife:Salvador": 839,
+    "Recife:Maceió": 285,
+    "Recife:João Pessoa": 120
+  },
+  {
+    "Rio Branco:Porto Velho": 544,
+    "Rio Branco:Manaus": 1445
+  },
+  {
+    "Rio de Janeiro:Vitória": 521,
+    "Rio de Janeiro:São Paulo": 429,
+    "Rio de Janeiro:Belo Horizonte": 434
+  },
+  {
+    "Salvador:Belo Horizonte": 1372,
+    "Salvador:Goiânia": 1643,
+    "Salvador:Palmas": 1454,
+    "Salvador:Teresina": 1163,
+    "Salvador:Vitória": 1202,
+    "Salvador:Aracajú": 356,
+    "Salvador:Maceió": 632,
+    "Salvador:Recife": 839
+  },
+  {
+    "São Luis:Belém": 806,
+    "São Luis:Teresina": 446,
+    "São Luis:Palmas": 1386
+  },
+  {
+    "São Paulo:Belo Horizonte": 586,
+    "São Paulo:Campo Grande": 1014,
+    "São Paulo:Curitiba": 408,
+    "São Paulo:Rio de Janeiro": 429
+  },
+  {
+    "Teresina:Fortaleza": 634,
+    "Teresina:Palmas": 1401,
+    "Teresina:Recife": 1137,
+    "Teresina:Salvador": 1163,
+    "Teresina:São Luis": 446
+  },
+  {
+    "Vitória:Rio de Janeiro": 521,
+    "Vitória:Salvador": 1202,
+    "Vitória:Belo Horizonte": 524
+  }
+]
