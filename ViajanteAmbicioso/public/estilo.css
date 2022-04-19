@@ -3,8 +3,10 @@
 }
 
 .principal{
-    background-image:url(img/via.png);
+    background-image:url(img/estrada.png);
     background-repeat: no-repeat;
-    background-size: 80%;
+    background-size: 50%;
+    background-position-x: 50%;
+    background-position-y: -60%;
   
 }
