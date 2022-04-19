@@ -1,0 +1,10 @@
+.bloco {
+    display: flex;
+}
+
+.principal{
+    background-image:url(img/via.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+  
+}
