@@ -12,7 +12,7 @@ app.get('', (req, res) => {
 });
 
 
-
+console.log(data[0]["Aracaj�:Macei�"].distancia)
 
 /*const grafo = new Graph();
 for (let i = 0; i < data.length; i++) {

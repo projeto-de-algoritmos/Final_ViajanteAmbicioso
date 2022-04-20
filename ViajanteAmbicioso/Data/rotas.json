@@ -1,157 +1,460 @@
 [
   {
-    "Aracajú:Maceió": 294,
-    "Aracajú:Salvador": 356
+    "Aracajï¿½:Maceiï¿½": {
+      "distancia": 294,
+      "tempo": 3.675
+    },
+    "Aracajï¿½:Salvador": {
+      "distancia": 356,
+      "tempo": 4.45
+    }
   },
   {
-    "Belém:São Luis": 806,
-    "Belém:Palmas": 1283,
-    "Belém:Cuiabá": 2941,
-    "Belém:Manaus": 5298,
-    "Belém:Macapá": 2173,
-    "Belém:Boa Vista": 6083
+    "Belï¿½m:Sï¿½o Luis": {
+      "distancia": 806,
+      "tempo": 10.075
+    },
+    "Belï¿½m:Palmas": {
+      "distancia": 1283,
+      "tempo": 16.0375
+    },
+    "Belï¿½m:Cuiabï¿½": {
+      "distancia": 2941,
+      "tempo": 36.7625
+    },
+    "Belï¿½m:Manaus": {
+      "distancia": 5298,
+      "tempo": 66.225
+    },
+    "Belï¿½m:Macapï¿½": {
+      "distancia": 2173,
+      "tempo": 27.1625
+    },
+    "Belï¿½m:Boa Vista": {
+      "distancia": 6083,
+      "tempo": 76.0375
+    }
   },
   {
-    "Macapá:Belém": 2173
+    "Macapï¿½:Belï¿½m": {
+      "distancia": 2173,
+      "tempo": 27.1625
+    }
   },
   {
-    "Belo Horizonte:Rio de Janeiro": 434,
-    "Belo Horizonte:Vitória": 524,
-    "Belo Horizonte:São Paulo": 586,
-    "Belo Horizonte:Campo Grande": 1453,
-    "Belo Horizonte:Goiânia": 906,
-    "Belo Horizonte:Brasília": 716,
-    "Belo Horizonte:Salvador": 1372
+    "Belo Horizonte:Rio de Janeiro": {
+      "distancia": 434,
+      "tempo": 5.425
+    },
+    "Belo Horizonte:Vitï¿½ria": {
+      "distancia": 524,
+      "tempo": 6.55
+    },
+    "Belo Horizonte:Sï¿½o Paulo": {
+      "distancia": 586,
+      "tempo": 7.325
+    },
+    "Belo Horizonte:Campo Grande": {
+      "distancia": 1453,
+      "tempo": 18.1625
+    },
+    "Belo Horizonte:Goiï¿½nia": {
+      "distancia": 906,
+      "tempo": 11.325
+    },
+    "Belo Horizonte:Brasï¿½lia": {
+      "distancia": 716,
+      "tempo": 8.95
+    },
+    "Belo Horizonte:Salvador": {
+      "distancia": 1372,
+      "tempo": 17.15
+    }
   },
   {
-    "Boa Vista:Manaus": 785,
-    "Boa Vista:Belém": 6083
+    "Boa Vista:Manaus": {
+      "distancia": 785,
+      "tempo": 9.8125
+    },
+    "Boa Vista:Belï¿½m": {
+      "distancia": 6083,
+      "tempo": 76.0375
+    }
   },
   {
-    "Brasília:Belo Horizonte": 716,
-    "Brasília:Goiânia": 209
+    "Brasï¿½lia:Belo Horizonte": {
+      "distancia": 716,
+      "tempo": 8.95
+    },
+    "Brasï¿½lia:Goiï¿½nia": {
+      "distancia": 209,
+      "tempo": 2.6125
+    }
   },
   {
-    "Campo Grande:Cuiabá": 694,
-    "Campo Grande:Goiânia": 934,
-    "Campo Grande:Belo Horizonte": 1453,
-    "Campo Grande:São Paulo": 1014,
-    "Campo Grande:Curitiba": 991
+    "Campo Grande:Cuiabï¿½": {
+      "distancia": 694,
+      "tempo": 8.675
+    },
+    "Campo Grande:Goiï¿½nia": {
+      "distancia": 934,
+      "tempo": 11.675
+    },
+    "Campo Grande:Belo Horizonte": {
+      "distancia": 1453,
+      "tempo": 18.1625
+    },
+    "Campo Grande:Sï¿½o Paulo": {
+      "distancia": 1014,
+      "tempo": 12.675
+    },
+    "Campo Grande:Curitiba": {
+      "distancia": 991,
+      "tempo": 12.3875
+    }
   },
   {
-    "Cuiabá:Porto Velho": 1456,
-    "Cuiabá:Manaus": 2357,
-    "Cuiabá:Belém": 2941,
-    "Cuiabá:Palmas": 1784,
-    "Cuiabá:Goiânia": 934,
-    "Cuiabá:Campo Grande": 694
+    "Cuiabï¿½:Porto Velho": {
+      "distancia": 1456,
+      "tempo": 18.2
+    },
+    "Cuiabï¿½:Manaus": {
+      "distancia": 2357,
+      "tempo": 29.4625
+    },
+    "Cuiabï¿½:Belï¿½m": {
+      "distancia": 2941,
+      "tempo": 36.7625
+    },
+    "Cuiabï¿½:Palmas": {
+      "distancia": 1784,
+      "tempo": 22.3
+    },
+    "Cuiabï¿½:Goiï¿½nia": {
+      "distancia": 934,
+      "tempo": 11.675
+    },
+    "Cuiabï¿½:Campo Grande": {
+      "distancia": 694,
+      "tempo": 8.675
+    }
   },
   {
-    "Curitiba:São Paulo": 408,
-    "Curitiba:Campo Grande": 991,
-    "Curitiba:Florianópolis": 300
+    "Curitiba:Sï¿½o Paulo": {
+      "distancia": 408,
+      "tempo": 5.1
+    },
+    "Curitiba:Campo Grande": {
+      "distancia": 991,
+      "tempo": 12.3875
+    },
+    "Curitiba:Florianï¿½polis": {
+      "distancia": 300,
+      "tempo": 3.75
+    }
   },
   {
-    "Florianópolis:Curitiba": 300,
-    "Florianópolis:Porto Alegre": 476
+    "Florianï¿½polis:Curitiba": {
+      "distancia": 300,
+      "tempo": 3.75
+    },
+    "Florianï¿½polis:Porto Alegre": {
+      "distancia": 476,
+      "tempo": 5.95
+    }
   },
   {
-    "Fortaleza:Teresina": 634,
-    "Fortaleza:Recife": 800,
-    "Fortaleza:João Pessoa": 688,
-    "Fortaleza:Natal": 537
+    "Fortaleza:Teresina": {
+      "distancia": 634,
+      "tempo": 7.925
+    },
+    "Fortaleza:Recife": {
+      "distancia": 800,
+      "tempo": 10
+    },
+    "Fortaleza:Joï¿½o Pessoa": {
+      "distancia": 688,
+      "tempo": 8.6
+    },
+    "Fortaleza:Natal": {
+      "distancia": 537,
+      "tempo": 6.7125
+    }
   },
   {
-    "Goiânia:Belo Horizonte": 906,
-    "Goiânia:Brasília": 209,
-    "Goiânia:Campo Grande": 935,
-    "Goiânia:Cuiabá": 934,
-    "Goiânia:Palmas": 874,
-    "Goiânia:Salvador": 1643
+    "Goiï¿½nia:Belo Horizonte": {
+      "distancia": 906,
+      "tempo": 11.325
+    },
+    "Goiï¿½nia:Brasï¿½lia": {
+      "distancia": 209,
+      "tempo": 2.6125
+    },
+    "Goiï¿½nia:Campo Grande": {
+      "distancia": 935,
+      "tempo": 11.6875
+    },
+    "Goiï¿½nia:Cuiabï¿½": {
+      "distancia": 934,
+      "tempo": 11.675
+    },
+    "Goiï¿½nia:Palmas": {
+      "distancia": 874,
+      "tempo": 10.925
+    },
+    "Goiï¿½nia:Salvador": {
+      "distancia": 1643,
+      "tempo": 20.5375
+    }
   },
   {
-    "João Pessoa:Natal": 185,
-    "João Pessoa:Teresina": 1224,
-    "João Pessoa:Recife": 120
+    "Joï¿½o Pessoa:Natal": {
+      "distancia": 185,
+      "tempo": 2.3125
+    },
+    "Joï¿½o Pessoa:Teresina": {
+      "distancia": 1224,
+      "tempo": 15.3
+    },
+    "Joï¿½o Pessoa:Recife": {
+      "distancia": 120,
+      "tempo": 1.5
+    }
   },
   {
-    "Maceió:Aracajú": 294,
-    "Maceió:Recife": 256,
-    "Maceió:Salvador": 580
+    "Maceiï¿½:Aracajï¿½": {
+      "distancia": 294,
+      "tempo": 3.675
+    },
+    "Maceiï¿½:Recife": {
+      "distancia": 256,
+      "tempo": 3.2
+    },
+    "Maceiï¿½:Salvador": {
+      "distancia": 120,
+      "tempo": 7.25
+    }
   },
   {
-    "Manaus:Belém": 5298,
-    "Manaus:Boa Vista": 785,
-    "Manaus:Cuiabá": 2357,
-    "Manaus:Porto Velho": 888,
-    "Manaus:Rio Branco": 1400
+    "Manaus:Belï¿½m": {
+      "distancia": 5298,
+      "tempo": 66.225
+    },
+    "Manaus:Boa Vista": {
+      "distancia": 785,
+      "tempo": 9.8125
+    },
+    "Manaus:Cuiabï¿½": {
+      "distancia": 2357,
+      "tempo": 29.4625
+    },
+    "Manaus:Porto Velho": {
+      "distancia": 888,
+      "tempo": 11.1
+    },
+    "Manaus:Rio Branco": {
+      "distancia": 1400,
+      "tempo": 17.5
+    }
   },
   {
-    "Natal:Fortaleza": 537,
-    "Natal:João Pessoa": 185
+    "Natal:Fortaleza": {
+      "distancia": 537,
+      "tempo": 6.7125
+    },
+    "Natal:Joï¿½o Pessoa": {
+      "distancia": 185,
+      "tempo": 2.3125
+    }
   },
   {
-    "Palmas:Belém": 1283,
-    "Palmas:Cuiabá": 1784,
-    "Palmas:Goiânia": 874,
-    "Palmas:Salvador": 1500,
-    "Palmas:Teresina": 1110,
-    "Palmas:São Luis": 1250
+    "Palmas:Belï¿½m": {
+      "distancia": 1283,
+      "tempo": 16.0375
+    },
+    "Palmas:Cuiabï¿½": {
+      "distancia": 1784,
+      "tempo": 22.3
+    },
+    "Palmas:Goiï¿½nia": {
+      "distancia": 874,
+      "tempo": 10.925
+    },
+    "Palmas:Salvador": {
+      "distancia": 1500,
+      "tempo": 18.75
+    },
+    "Palmas:Teresina": {
+      "distancia": 1110,
+      "tempo": 2.3125
+    },
+    "Palmas:Sï¿½o Luis": {
+      "distancia": 185,
+      "tempo": 13.875
+    }
   },
   {
-    "Porto Alegre:Florianópolis": 476
+    "Porto Alegre:Florianï¿½polis": {
+      "distancia": 476,
+      "tempo": 5.95
+    }
   },
   {
-    "Porto Velho:Manaus": 901,
-    "Porto Velho:Cuiabá": 1456
+    "Porto Velho:Manaus": {
+      "distancia": 901,
+      "tempo": 11.2625
+    },
+    "Porto Velho:Cuiabï¿½": {
+      "distancia": 1456,
+      "tempo": 18.2
+    }
   },
   {
-    "Recife:Fortaleza": 800,
-    "Recife:Teresina": 1137,
-    "Recife:Salvador": 839,
-    "Recife:Maceió": 285,
-    "Recife:João Pessoa": 120
+    "Recife:Fortaleza": {
+      "distancia": 800,
+      "tempo": 10
+    },
+    "Recife:Teresina": {
+      "distancia": 1137,
+      "tempo": 14.125
+    },
+    "Recife:Salvador": {
+      "distancia": 839,
+      "tempo": 10.4875
+    },
+    "Recife:Maceiï¿½": {
+      "distancia": 256,
+      "tempo": 3.2
+    },
+    "Recife:Joï¿½o Pessoa": {
+      "distancia": 120,
+      "tempo": 1.5
+    }
   },
   {
-    "Rio Branco:Porto Velho": 544,
-    "Rio Branco:Manaus": 1445
+    "Rio Branco:Porto Velho": {
+      "distancia": 544,
+      "tempo": 6.8
+    },
+    "Rio Branco:Manaus": {
+      "distancia": 1445,
+      "tempo": 18.0625
+    }
   },
   {
-    "Rio de Janeiro:Vitória": 521,
-    "Rio de Janeiro:São Paulo": 429,
-    "Rio de Janeiro:Belo Horizonte": 434
+    "Rio de Janeiro:Vitï¿½ria": {
+      "distancia": 521,
+      "tempo": 6.5125
+    },
+    "Rio de Janeiro:Sï¿½o Paulo": {
+      "distancia": 429,
+      "tempo": 5.3625
+    },
+    "Rio de Janeiro:Belo Horizonte": {
+      "distancia": 1445,
+      "tempo": 5.425
+    }
   },
   {
-    "Salvador:Belo Horizonte": 1372,
-    "Salvador:Goiânia": 1643,
-    "Salvador:Palmas": 1454,
-    "Salvador:Teresina": 1163,
-    "Salvador:Vitória": 1202,
-    "Salvador:Aracajú": 356,
-    "Salvador:Maceió": 632,
-    "Salvador:Recife": 839
+    "Salvador:Belo Horizonte": {
+      "distancia": 1372,
+      "tempo": 17.15
+    },
+    "Salvador:Goiï¿½nia": {
+      "distancia": 1643,
+      "tempo": 20.5375
+    },
+    "Palmas:Salvador": {
+      "distancia": 1500,
+      "tempo": 18.75
+    },
+    "Salvador:Teresina": {
+      "distancia": 1163,
+      "tempo": 14.5375
+    },
+    "Salvador:Vitï¿½ria": {
+      "distancia": 1202,
+      "tempo": 15.025
+    },
+    "Aracajï¿½:Salvador": {
+      "distancia": 356,
+      "tempo": 4.45
+    },
+    "Salvador:Maceiï¿½": {
+      "distancia": 632,
+      "tempo": 7.9
+    },
+    "Salvador:Recife": {
+      "distancia": 839,
+      "tempo": 10.4875
+    }
   },
   {
-    "São Luis:Belém": 806,
-    "São Luis:Teresina": 446,
-    "São Luis:Palmas": 1386
+    "Sï¿½o Luis:Belï¿½m": {
+      "distancia": 806,
+      "tempo": 10.075
+    },
+    "Sï¿½o Luis:Teresina": {
+      "distancia": 446,
+      "tempo": 5.575
+    },
+    "Sï¿½o Luis:Palmas": {
+      "distancia": 1386,
+      "tempo": 17.325
+    }
   },
   {
-    "São Paulo:Belo Horizonte": 586,
-    "São Paulo:Campo Grande": 1014,
-    "São Paulo:Curitiba": 408,
-    "São Paulo:Rio de Janeiro": 429
+    "Sï¿½o Paulo:Belo Horizonte": {
+      "distancia": 586,
+      "tempo": 7.325
+    },
+    "Sï¿½o Paulo:Campo Grande": {
+      "distancia": 1014,
+      "tempo": 12.675
+    },
+    "Sï¿½o Paulo:Curitiba": {
+      "distancia": 408,
+      "tempo": 5.1
+    },
+    "Sï¿½o Paulo:Rio de Janeiro": {
+      "distancia": 429,
+      "tempo": 5.3625
+    }
   },
   {
-    "Teresina:Fortaleza": 634,
-    "Teresina:Palmas": 1401,
-    "Teresina:Recife": 1137,
-    "Teresina:Salvador": 1163,
-    "Teresina:São Luis": 446
+    "Teresina:Fortaleza": {
+      "distancia": 634,
+      "tempo": 7.925
+    },
+    "Teresina:Palmas": {
+      "distancia": 1401,
+      "tempo": 17.5125
+    },
+    "Teresina:Recife": {
+      "distancia": 1137,
+      "tempo": 14.125
+    },
+    "Teresina:Salvador": {
+      "distancia": 1163,
+      "tempo": 14.5375
+    },
+    "Teresina:Sï¿½o Luis": {
+      "distancia": 446,
+      "tempo": 5.575
+    }
   },
   {
-    "Vitória:Rio de Janeiro": 521,
-    "Vitória:Salvador": 1202,
-    "Vitória:Belo Horizonte": 524
+    "Vitï¿½ria:Rio de Janeiro": {
+      "distancia": 521,
+      "tempo": 6.5125
+    },
+    "Vitï¿½ria:Salvador": {
+      "distancia": 1202,
+      "tempo": 15.025
+    },
+    "Vitï¿½ria:Belo Horizonte": {
+      "distancia": 524,
+      "tempo": 6.55
+    }
   }
 ]
