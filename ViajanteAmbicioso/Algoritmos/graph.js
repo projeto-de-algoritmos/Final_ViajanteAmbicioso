@@ -7,6 +7,7 @@ module.exports = class Graph {
 
     adicionaVertice(name, edges) {
         this.vertices[name] = edges;
+       
     };
 
     menorCaminho(inicio, fim) {

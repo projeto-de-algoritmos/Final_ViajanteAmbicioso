@@ -38,7 +38,7 @@
             <div class="container ms-3">
                 <div class="card mt-3" style="width: 500px;">
                     <div class="card-body">
-                        <form>
+                        <form action="/rota" method="POST">
                             <div class="form-group mb-3 w-50">
                                 <label for="origem">Capital inicial</label>
                                 <select name="origem" id="capital-origem" class="form-select form-select-sm"
@@ -64,8 +64,8 @@
                                     min="00:00" max="23:59" required></br>
                             </div>
                             <div class="form-check mt-4">
-                                <input type="checkbox" class="form-check-input" id="formaPasseio">
-                                <label class="form-check-label" for="formaPasseio">Quero um dia de passeio para cada
+                                <input type="checkbox" class="form-check-input" name="queroPassear" id="formaPasseio">
+                                <label class="form-check-label"  for="formaPasseio">Quero um dia de passeio para cada
                                     cidade
                                     que
                                     passar</label>
