@@ -22,29 +22,28 @@ for (let i = 0; i < rotaWH.length; i++) {
     }
     grafo.adicionaVertice(name, objLiteral);
 }
-
 app.get('', (req, res) => {
-    res.render('index', { showResult: false });
+    res.render('index', { result: 0 });
 });
 var origem, destino, passeioCadaCidade, horaPartida;
 app.post('/rota', (req, res) => {
-     origem = req.body.origem;
-     destino = req.body.destino;
-     passeioCadaCidade = req.body.queroPassear;
-     horaPartida = parseInt(req.body.partidaHora.replace(':', ''));
+    origem = req.body.origem;
+    destino = req.body.destino;
+    passeioCadaCidade = req.body.queroPassear;
+    horaPartida = parseInt(req.body.partidaHora.replace(':', ''));
     var interval = new intervalScheduling()
-   // console.log(horaPartida)
+    // console.log(horaPartida)
     let destinos = grafo.menorCaminho(origem, destino).concat([origem]).reverse()
     console.log(' Sua rota é ' + destinos)
     var l = 0;
- 
+    var resultado = [];
+
     while (destinos.length > l) {
- 
+
         var ultimaCidade = destinos[destinos.length - 1];
         var cidadeAtual = destinos[l];
-      //  if (passeioCadaCidade != 'on') {cidadeAtual=ultimaCidade}
+        //  if (passeioCadaCidade != 'on') {cidadeAtual=ultimaCidade}
         var horarios = [];
-        console.log('cidade ' + l + ' '+ destinos[l]);
         for (var i = 0; i < passeios.length; i++) {
             var obj = passeios[i];
             for (var cidade in obj) {
@@ -73,16 +72,21 @@ app.post('/rota', (req, res) => {
                     })
 
                     var horariosScheduling = interval.calculaScheduling(horarios.length, horarios, horaPartida)
-                
-                    
-                 /*   if (passeioCadaCidade != 'on') {
-                        console.log(horariosScheduling)
-                        break;
-                    } 
-                    else {
-                        console.log(horariosScheduling)
-                    }*/
-                    console.log(horariosScheduling)
+
+
+                    /*   if (passeioCadaCidade != 'on') {
+                           console.log(horariosScheduling)
+                           break;
+                       } 
+                       else {
+                           console.log(horariosScheduling)
+                       }*/
+                    for (let index = 0; index < horariosScheduling.length; index++) {
+                        let inicio = horariosScheduling[index].inicio
+                        console.log(typeof inicio.toString())
+                        console.log([inicio.toString().slice(0, 2), ":", inicio.toString().slice(2)].join(''))
+                        resultado.push([destinos[l], `${horariosScheduling[index].passeio}: inicio: ${[horariosScheduling[index].inicio.toString().slice(0, 2), ":", horariosScheduling[index].inicio.toString().slice(2)].join('')}; fim: ${[horariosScheduling[index].fim.toString().slice(0, 2), ":", horariosScheduling[index].fim.toString().slice(2)].join('')}.`])
+                    }
 
                 }
 
@@ -90,7 +94,8 @@ app.post('/rota', (req, res) => {
         }
         l++
     }
-    res.render('index', { showResult: false });
+    console.log(resultado)
+    res.render('index', { result: resultado, destinos: destinos });
 })
 
 

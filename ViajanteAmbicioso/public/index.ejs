@@ -65,7 +65,7 @@
                             </div>
                             <div class="form-check mt-4">
                                 <input type="checkbox" class="form-check-input" name="queroPassear" id="formaPasseio">
-                                <label class="form-check-label"  for="formaPasseio">Quero um dia de passeio para cada
+                                <label class="form-check-label" for="formaPasseio">Quero um dia de passeio para cada
                                     cidade
                                     que
                                     passar</label>
@@ -78,40 +78,19 @@
             <div class="container ms-3">
                 <div class="card mt-4" style="width: 500px;">
                     <div class="card-body">
-                        <form>
-                            <div class="form-group mb-3 w-50">
-                                <label for="origem">Card para mostrar passeios</label>
-                                <select name="origem" id="capital-origem" class="form-select form-select-sm"
-                                    aria-label=".form-select-sm example">
-                                    <option disabled="" selected="">Capital Inicial</option>
 
-                                </select>
-                                <small id="capitalInicial" class="form-text text-muted">Escolha a capital de
-                                    origem</small>
-                            </div>
-                            <div class="form-group mb-3 w-50">
-                                <label for="destino">Capital destino</label>
-                                <select name="destino" id="capital-destino" class="form-select form-select-sm"
-                                    aria-label=".form-select-sm example">
-                                    <option disabled="" selected="">Capital Destino</option>
-                                </select>
-                                <small id="capitalDestino" class="form-text text-muted">Escolha a capital
-                                    destino</small>
-                            </div>
-                            <div class="form-group mt-4">
-                                <label for="partidaHora">Adicione o horário que gostaria de sair</label>
-                                <br><input class="form-time " type="time" id="partidaHora" name="partidaHora"
-                                    min="00:00" max="23:59" required></br>
-                            </div>
-                            <div class="form-check mt-4">
-                                <input type="checkbox" class="form-check-input" id="formaPasseio">
-                                <label class="form-check-label" for="formaPasseio">Quero um dia de passeio para cada
-                                    cidade
-                                    que
-                                    passar</label>
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-sm float-end">Pesquisar</button>
-                        </form>
+                        <% for(var j=0; j<destinos.length; j++) { %>
+                        <li>
+                            <%= destinos[j] %>
+                        </li>
+                        <% for(var i=1; i<result.length; i++) { %>
+                        <% if(result[i][0] == destinos[j]) { %>
+                        <ul>
+                            <%= result[i][1] %>
+                        </ul>
+                        <% } %>
+                        <% } %>
+                        <% } %>
                     </div>
                 </div>
             </div>
