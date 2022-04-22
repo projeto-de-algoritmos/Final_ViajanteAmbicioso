@@ -1,12 +1,15 @@
 .bloco {
     display: flex;
 }
+.wrapper {
+    display: flex;
+  }
 
-.principal{
-    background-image:url(img/estrada.png);
+/* .principal{
+    background-image:url(img/brasilCapitais.jpg);
     background-repeat: no-repeat;
     background-size: 50%;
-    background-position-x: 50%;
-    background-position-y: -60%;
+    background-position-x: 75%;
+    background-position-y: 0%;
   
-}
+} */

@@ -9,7 +9,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./estilo.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -25,7 +25,7 @@
             <div class="container-fluid">
                 <a class="navbar-brand text-black" href="#">
                     <img src="img/icone_localizacao.png" alt="" width="20%" height="20%"
-                         class="d-inline-block align-text-top rounded-circle">
+                        class="d-inline-block align-text-top ">
                     Viajante Ambicioso
                 </a>
             </div>
@@ -33,82 +33,102 @@
 
     </header>
 
-
-
-
-    <div class="bloco">
-        <div class="" style=" width: 600px;">
-            <div class="" style="margin-top: 30px;">
-                <form name="myForm" action="addValor" method="post" class="card" style="width: 350px;">
+    <div class="wrapper">
+        <div style=" width: 600px;">
+            <div class="container ms-3">
+                <div class="card mt-3" style="width: 500px;">
                     <div class="card-body">
-                        <h5 class="card-title">Para onde vamos?</h5>
-                        <center>
-							<div class="selects">
-								<select name="origem"  id="capital-origem" class="form-select form-select-sm" aria-label=".form-select-sm example">
-									<option disabled="" selected="">Capital Inicial</option>
+                        <form>
+                            <div class="form-group mb-3 w-50">
+                                <label for="origem">Capital inicial</label>
+                                <select name="origem" id="capital-origem" class="form-select form-select-sm"
+                                    aria-label=".form-select-sm example">
+                                    <option disabled="" selected="">Capital Inicial</option>
 
-								</select>
-							</div>
-							<br>
-								<div class="selects">
-									<select name="destino"  id="capital-destino" class="form-select form-select-sm" aria-label=".form-select-sm example">
-										<option disabled="" selected="">Capital Destino</option>
-									</select>
-								</div>
-								<br>
-									<div>
-										<label>Adicione o horário que gostaria de sair</label>
-										<input name="horario" size="25" type="text" />
-									</div>
-									
-								<br>
-									<div class="">
-										<label>Como deseja que montemos seus passeios?</label>
-									<select name="opcao-usuario" class="form-select form-select-sm" aria-label=".form-select-sm example">
-										<option disabled="" selected="">Quero passeios apenas quando eu chegar no destino</option>
-										<option  >Quero um dia de passeio para cada cidade que passar</option>
-									</select>
-									
-                        </center>
-                        <br>
-
+                                </select>
+                                <small id="capitalInicial" class="form-text text-muted">Escolha a capital de
+                                    origem</small>
+                            </div>
+                            <div class="form-group mb-3 w-50">
+                                <label for="destino">Capital destino</label>
+                                <select name="destino" id="capital-destino" class="form-select form-select-sm"
+                                    aria-label=".form-select-sm example">
+                                    <option disabled="" selected="">Capital Destino</option>
+                                </select>
+                                <small id="capitalDestino" class="form-text text-muted">Escolha a capital
+                                    destino</small>
+                            </div>
+                            <div class="form-group mt-4">
+                                <label for="partidaHora">Adicione o horário que gostaria de sair</label>
+                                <br><input class="form-time " type="time" id="partidaHora" name="partidaHora"
+                                    min="00:00" max="23:59" required></br>
+                            </div>
+                            <div class="form-check mt-4">
+                                <input type="checkbox" class="form-check-input" id="formaPasseio">
+                                <label class="form-check-label" for="formaPasseio">Quero um dia de passeio para cada
+                                    cidade
+                                    que
+                                    passar</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-sm float-end">Pesquisar</button>
+                        </form>
                     </div>
-                    <input class="btn btn-info btn-sm" type="submit" value="Adicionar"></input>
-                </form>
+                </div>
             </div>
-            <div class="" style="margin-top: 30px;">
-                <div style="width: 350px;">
-                    <% if(!showResult){ %>
-                    <form class=" card" action="calcula" method="post">
-                        <div style="height: 50px;"></div>
-                        <center>
-                            <h5 class="card-title">Veja o que planejamos para você</h5>
-                        </center>
-                        <div style="height: 50px;"></div>
-                        <input class="btn btn-info btn-sm" type="submit" value="Estou pronto!"> </input>
-                    </form>
-                    <% } else{ %>
-                    <div class=" card">
-                        <div style="height: 50px;"></div>
-                        <center>
-                      
-                        </center>
-                        <div style="height: 50px;"></div>
+            <div class="container ms-3">
+                <div class="card mt-4" style="width: 500px;">
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group mb-3 w-50">
+                                <label for="origem">Card para mostrar passeios</label>
+                                <select name="origem" id="capital-origem" class="form-select form-select-sm"
+                                    aria-label=".form-select-sm example">
+                                    <option disabled="" selected="">Capital Inicial</option>
+
+                                </select>
+                                <small id="capitalInicial" class="form-text text-muted">Escolha a capital de
+                                    origem</small>
+                            </div>
+                            <div class="form-group mb-3 w-50">
+                                <label for="destino">Capital destino</label>
+                                <select name="destino" id="capital-destino" class="form-select form-select-sm"
+                                    aria-label=".form-select-sm example">
+                                    <option disabled="" selected="">Capital Destino</option>
+                                </select>
+                                <small id="capitalDestino" class="form-text text-muted">Escolha a capital
+                                    destino</small>
+                            </div>
+                            <div class="form-group mt-4">
+                                <label for="partidaHora">Adicione o horário que gostaria de sair</label>
+                                <br><input class="form-time " type="time" id="partidaHora" name="partidaHora"
+                                    min="00:00" max="23:59" required></br>
+                            </div>
+                            <div class="form-check mt-4">
+                                <input type="checkbox" class="form-check-input" id="formaPasseio">
+                                <label class="form-check-label" for="formaPasseio">Quero um dia de passeio para cada
+                                    cidade
+                                    que
+                                    passar</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-sm float-end">Pesquisar</button>
+                        </form>
                     </div>
-                    <% } %>
                 </div>
             </div>
         </div>
-       
+        <div class="test" style="float: right;">
+            <img class="d-block" style="height: 780px;" src="img/brasilCapitais.jpg" alt="Second slide">
+        </div>
     </div>
 
 
 
 
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-            crossorigin="anonymous"></script>
-	<script src="js/cidades.js" type="text/javascript"></script>
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="js/cidades.js" type="text/javascript"></script>
 
 
 </body>
