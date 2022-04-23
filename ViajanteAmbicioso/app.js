@@ -23,7 +23,7 @@ for (let i = 0; i < rotaWH.length; i++) {
     grafo.adicionaVertice(name, objLiteral);
 }
 app.get('', (req, res) => {
-    res.render('index', { result: 0 });
+    res.render('index', { destinos: 0 });
 });
 var origem, destino, passeioCadaCidade, horaPartida;
 app.post('/rota', (req, res) => {
