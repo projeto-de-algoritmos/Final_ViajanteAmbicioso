@@ -3,7 +3,8 @@ module.exports = class Graph {
     constructor() {
         this.INFINITY = 1 / 0;
         this.vertices = {};
-        this.tempoTotal = 0;
+        this.tempoTotal = [];
+        this.tempoTotalUnico = 0;
     }
 
     adicionaVertice(name, edges) {
@@ -11,7 +12,7 @@ module.exports = class Graph {
 
     };
 
-    menorCaminho(inicio, fim) {
+    menorCaminho(inicio, fim, queroPasseios) {
         var nodes = new PriorityQueue(),
             distances = {},
             previous = {},
@@ -20,6 +21,8 @@ module.exports = class Graph {
             vertex,
             neighbor,
             alt;
+        this.tempoTotal = []
+        this.tempoTotalUnico = 0
 
         for (vertex in this.vertices) {
             if (vertex === inicio) {
@@ -38,8 +41,11 @@ module.exports = class Graph {
             if (smallest === fim) {
                 path = [];
                 while (previous[smallest]) {
-                    console.log(this.vertices[smallest][previous[smallest]])
-                    this.tempoTotal = this.tempoTotal + this.vertices[smallest][previous[smallest]] / 80;
+                    if (queroPasseios) {
+                        this.tempoTotal.push(this.vertices[smallest][previous[smallest]] / 80);
+                    } else {
+                        this.tempoTotalUnico = this.tempoTotalUnico + this.vertices[smallest][previous[smallest]] / 80;
+                    }
                     path.push(smallest);
                     smallest = previous[smallest];
                 }

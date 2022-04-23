@@ -30,23 +30,35 @@ app.post('/rota', (req, res) => {
     origem = req.body.origem;
     destino = req.body.destino;
     passeioCadaCidade = req.body.queroPassear;
-    horaPartida = parseInt(req.body.partidaHora.replace(':', ''));
+    horaPartida = parseFloat(req.body.partidaHora.replace(':', ''));
     var interval = new intervalScheduling()
-    // console.log(horaPartida)
-    let destinos = grafo.menorCaminho(origem, destino).concat([origem]).reverse()
-    let tempoTotal = 0;
-    if (grafo.tempoTotal < 24) {
-        //Menos de um dia
-        tempoTotal = grafo.tempoTotal
+    let destinos
+    if (req.body.queroPassear != null) {
+        destinos = grafo.menorCaminho(origem, destino, true).concat([origem]).reverse()
     } else {
-        //Se passar de um dia essa é a hora que chega
-        tempoTotal = grafo.tempoTotal % 24
+        destinos = grafo.menorCaminho(origem, destino, false).concat([origem]).reverse()
+    }
+    let tempoTotal = [];
+    if (req.body.queroPassear != null) {
+        tempoTotal.push(grafo.tempoTotal[0] + horaPartida / 100)
+        for (let i = 1; i < grafo.tempoTotal.length; i++) {
+            if (grafo.tempoTotal[i] < 24) {
+                //Menos de um dia
+                tempoTotal.push(grafo.tempoTotal[i])
+            } else {
+                //Se passar de um dia essa é a hora que chega
+                tempoTotal.push(grafo.tempoTotal[i] % 24)
+            }
+        }
+    } else {
+        tempoTotal = grafo.tempoTotalUnico
     }
     console.log(tempoTotal)
     console.log(' Sua rota é ' + destinos)
-    var l = 0;
+    var l = 1;
     var resultado = [];
-
+    let x = 0;
+    let destinoEjs = []
     while (destinos.length > l) {
 
         var ultimaCidade = destinos[destinos.length - 1];
@@ -80,7 +92,20 @@ app.post('/rota', (req, res) => {
                         return 0;
                     })
 
-                    var horariosScheduling = interval.calculaScheduling(horarios.length, horarios, horaPartida)
+                    if (req.body.queroPassear != null) {
+                        var horariosScheduling = interval.calculaScheduling(horarios.length, horarios, tempoTotal[x])
+                        for (let index = 0; index < horariosScheduling.length; index++) {
+                            resultado.push([destinos[l], `${horariosScheduling[index].passeio}: inicio: ${[horariosScheduling[index].inicio.toString().slice(0, 2), ":", horariosScheduling[index].inicio.toString().slice(2)].join('')}; fim: ${[horariosScheduling[index].fim.toString().slice(0, 2), ":", horariosScheduling[index].fim.toString().slice(2)].join('')}.`])
+                        }
+                        destinoEjs.push(destinos[l])
+                        console.log(tempoTotal[x])
+                    } else if (l == destinos.length - 1) {
+                        var horariosScheduling = interval.calculaScheduling(horarios.length, horarios, tempoTotal)
+                        for (let index = 0; index < horariosScheduling.length; index++) {
+                            resultado.push([destinos[l], `${horariosScheduling[index].passeio}: inicio: ${[horariosScheduling[index].inicio.toString().slice(0, 2), ":", horariosScheduling[index].inicio.toString().slice(2)].join('')}; fim: ${[horariosScheduling[index].fim.toString().slice(0, 2), ":", horariosScheduling[index].fim.toString().slice(2)].join('')}.`])
+                        }
+                        destinoEjs.push(destinos[l])
+                    }
 
 
                     /*   if (passeioCadaCidade != 'on') {
@@ -90,18 +115,15 @@ app.post('/rota', (req, res) => {
                        else {
                            console.log(horariosScheduling)
                        }*/
-                    for (let index = 0; index < horariosScheduling.length; index++) {
-                        let inicio = horariosScheduling[index].inicio
-                        resultado.push([destinos[l], `${horariosScheduling[index].passeio}: inicio: ${[horariosScheduling[index].inicio.toString().slice(0, 2), ":", horariosScheduling[index].inicio.toString().slice(2)].join('')}; fim: ${[horariosScheduling[index].fim.toString().slice(0, 2), ":", horariosScheduling[index].fim.toString().slice(2)].join('')}.`])
-                    }
 
                 }
 
             }
         }
         l++
+        x++
     }
-    res.render('index', { result: resultado, destinos: destinos });
+    res.render('index', { result: resultado, destinos: destinoEjs });
 })
 
 
