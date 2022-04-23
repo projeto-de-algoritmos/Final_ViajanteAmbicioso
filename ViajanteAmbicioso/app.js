@@ -34,6 +34,15 @@ app.post('/rota', (req, res) => {
     var interval = new intervalScheduling()
     // console.log(horaPartida)
     let destinos = grafo.menorCaminho(origem, destino).concat([origem]).reverse()
+    let tempoTotal = 0;
+    if (grafo.tempoTotal < 24) {
+        //Menos de um dia
+        tempoTotal = grafo.tempoTotal
+    } else {
+        //Se passar de um dia essa é a hora que chega
+        tempoTotal = grafo.tempoTotal % 24
+    }
+    console.log(tempoTotal)
     console.log(' Sua rota é ' + destinos)
     var l = 0;
     var resultado = [];
@@ -83,8 +92,6 @@ app.post('/rota', (req, res) => {
                        }*/
                     for (let index = 0; index < horariosScheduling.length; index++) {
                         let inicio = horariosScheduling[index].inicio
-                        console.log(typeof inicio.toString())
-                        console.log([inicio.toString().slice(0, 2), ":", inicio.toString().slice(2)].join(''))
                         resultado.push([destinos[l], `${horariosScheduling[index].passeio}: inicio: ${[horariosScheduling[index].inicio.toString().slice(0, 2), ":", horariosScheduling[index].inicio.toString().slice(2)].join('')}; fim: ${[horariosScheduling[index].fim.toString().slice(0, 2), ":", horariosScheduling[index].fim.toString().slice(2)].join('')}.`])
                     }
 
@@ -94,7 +101,6 @@ app.post('/rota', (req, res) => {
         }
         l++
     }
-    console.log(resultado)
     res.render('index', { result: resultado, destinos: destinos });
 })
 

@@ -3,11 +3,12 @@ module.exports = class Graph {
     constructor() {
         this.INFINITY = 1 / 0;
         this.vertices = {};
+        this.tempoTotal = 0;
     }
 
     adicionaVertice(name, edges) {
         this.vertices[name] = edges;
-       
+
     };
 
     menorCaminho(inicio, fim) {
@@ -37,6 +38,8 @@ module.exports = class Graph {
             if (smallest === fim) {
                 path = [];
                 while (previous[smallest]) {
+                    console.log(this.vertices[smallest][previous[smallest]])
+                    this.tempoTotal = this.tempoTotal + this.vertices[smallest][previous[smallest]] / 80;
                     path.push(smallest);
                     smallest = previous[smallest];
                 }
