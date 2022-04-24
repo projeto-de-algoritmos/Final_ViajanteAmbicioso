@@ -53,8 +53,8 @@ app.post('/rota', (req, res) => {
     } else {
         tempoTotal = grafo.tempoTotalUnico
     }
-    console.log(tempoTotal)
-    console.log(' Sua rota é ' + destinos)
+  //  console.log(tempoTotal)
+  //  console.log(' Sua rota é ' + destinos)
     var l = 1;
     var resultado = [];
     let x = 0;
@@ -98,7 +98,7 @@ app.post('/rota', (req, res) => {
                             resultado.push([destinos[l], `${horariosScheduling[index].passeio}: inicio: ${[horariosScheduling[index].inicio.toString().slice(0, 2), ":", horariosScheduling[index].inicio.toString().slice(2)].join('')}; fim: ${[horariosScheduling[index].fim.toString().slice(0, 2), ":", horariosScheduling[index].fim.toString().slice(2)].join('')}.`])
                         }
                         destinoEjs.push(destinos[l])
-                        console.log(tempoTotal[x])
+                     //   console.log(tempoTotal[x])
                     } else if (l == destinos.length - 1) {
                         var horariosScheduling = interval.calculaScheduling(horarios.length, horarios, tempoTotal)
                         for (let index = 0; index < horariosScheduling.length; index++) {
