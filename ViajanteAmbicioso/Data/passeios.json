@@ -1,6 +1,6 @@
 [
     {
-        "Aracajú": {
+        "Aracaju": {
             "City Tour Aracaju": [
                 {
                     "inicio": "08:00",
@@ -48,7 +48,7 @@
         }
     },
     {
-        "Belém": {
+        "Belem": {
             "Região do Ver-o-Peso": [
                 {
                     "inicio": "17:30",
@@ -276,14 +276,14 @@
         }
     },
     {
-        "Brasília": {
+        "Brasilia": {
             "Torre de TV": [
                 {
                     "inicio": "09:00",
                     "fim": "12:00"
                 }
             ],
-            "Brasília City Tour": [
+            "Brasilia City Tour": [
                 {
                     "inicio": "10:00",
                     "fim": "14:00"
@@ -658,7 +658,7 @@
         }
     },
     {
-        "Florianópolis": {
+        "Florianopolis": {
             "Passeio para Ilha do Campeche": [
                 {
                     "inicio": "10:00",
@@ -758,7 +758,7 @@
         }
     },
     {
-        "Goiânia": {
+        "Goiania": {
             "Praça Cívica": [
                 {
                     "inicio": "07:00",
@@ -898,7 +898,7 @@
         }
     },
     {
-        "João Pessoa": {
+        "Joao Pessoa": {
             "City Tour Completo": [
                 {
                     "inicio": "10:00",
@@ -926,8 +926,8 @@
         }
     },
     {
-        "Macapá": {
-            "Fortaleza de São José do Amapá": [
+        "Macapa": {
+            "Fortaleza de Sao José do Amapá": [
                 {
                     "inicio": "08:00",
                     "fim": "10:00"
@@ -1022,7 +1022,7 @@
         }
     },
     {
-        "Maceió": {
+        "Maceio": {
             "Museu Palácio Floriano Peixoto": [
                 {
                     "inicio": "08:00",
@@ -1099,7 +1099,7 @@
     },
     {
         "Manaus": {
-            "Praça de São Sebastião": [
+            "Praça de Sao Sebastião": [
                 {
                     "inicio": "07:00",
                     "fim": "09:00"
@@ -1192,7 +1192,7 @@
     },
     {
         "Natal": {
-            "PASSEIO DE SÃO MIGUEL DO GOSTOSO": [
+            "PASSEIO DE Sao MIGUEL DO GOSTOSO": [
                 {
                     "inicio": "07:00",
                     "fim": "10:00"
@@ -1209,7 +1209,6 @@
                     "inicio": "09:00",
                     "fim": "14:00"
                 },
-             
                 {
                     "inicio": "17:00",
                     "fim": "19:00"
@@ -1912,7 +1911,7 @@
         }
     },
     {
-        "São Luís": {
+        "Sao Luis": {
             "Casa do Maranhão": [
                 {
                     "inicio": "09:00",
@@ -2044,8 +2043,8 @@
         }
     },
     {
-        "São Paulo": {
-            "São Paulo bem do alto": [
+        "Sao Paulo": {
+            "Sao Paulo bem do alto": [
                 {
                     "inicio": "09:00",
                     "fim": "11:00"
@@ -2256,7 +2255,7 @@
         }
     },
     {
-        "Vitória": {
+        "Vitoria": {
             "Fábrica de chocolates da Garoto": [
                 {
                     "inicio": "09:00",

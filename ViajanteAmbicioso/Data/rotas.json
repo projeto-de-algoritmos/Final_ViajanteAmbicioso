@@ -1,42 +1,42 @@
 [
   {
-    "Aracaj�:Macei�": {
+    "Aracaju:Maceio": {
       "distancia": 294,
       "tempo": 3.675
     },
-    "Aracaj�:Salvador": {
+    "Aracaju:Salvador": {
       "distancia": 356,
       "tempo": 4.45
     }
   },
   {
-    "Bel�m:S�o Luis": {
+    "Belem:Sao Luis": {
       "distancia": 806,
       "tempo": 10.075
     },
-    "Bel�m:Palmas": {
+    "Belem:Palmas": {
       "distancia": 1283,
       "tempo": 16.0375
     },
-    "Bel�m:Cuiab�": {
+    "Belem:Cuiaba": {
       "distancia": 2941,
       "tempo": 36.7625
     },
-    "Bel�m:Manaus": {
+    "Belem:Manaus": {
       "distancia": 5298,
       "tempo": 66.225
     },
-    "Bel�m:Macap�": {
+    "Belem:Macapa": {
       "distancia": 2173,
       "tempo": 27.1625
     },
-    "Bel�m:Boa Vista": {
+    "Belem:Boa Vista": {
       "distancia": 6083,
       "tempo": 76.0375
     }
   },
   {
-    "Macap�:Bel�m": {
+    "Macapa:Belem": {
       "distancia": 2173,
       "tempo": 27.1625
     }
@@ -46,11 +46,11 @@
       "distancia": 434,
       "tempo": 5.425
     },
-    "Belo Horizonte:Vit�ria": {
+    "Belo Horizonte:Vitoria": {
       "distancia": 524,
       "tempo": 6.55
     },
-    "Belo Horizonte:S�o Paulo": {
+    "Belo Horizonte:Sao Paulo": {
       "distancia": 586,
       "tempo": 7.325
     },
@@ -58,11 +58,11 @@
       "distancia": 1453,
       "tempo": 18.1625
     },
-    "Belo Horizonte:Goi�nia": {
+    "Belo Horizonte:Goiania": {
       "distancia": 906,
       "tempo": 11.325
     },
-    "Belo Horizonte:Bras�lia": {
+    "Belo Horizonte:Brasilia": {
       "distancia": 716,
       "tempo": 8.95
     },
@@ -76,27 +76,27 @@
       "distancia": 785,
       "tempo": 9.8125
     },
-    "Boa Vista:Bel�m": {
+    "Boa Vista:Belem": {
       "distancia": 6083,
       "tempo": 76.0375
     }
   },
   {
-    "Bras�lia:Belo Horizonte": {
+    "Brasilia:Belo Horizonte": {
       "distancia": 716,
       "tempo": 8.95
     },
-    "Bras�lia:Goi�nia": {
+    "Brasilia:Goiania": {
       "distancia": 209,
       "tempo": 2.6125
     }
   },
   {
-    "Campo Grande:Cuiab�": {
+    "Campo Grande:Cuiaba": {
       "distancia": 694,
       "tempo": 8.675
     },
-    "Campo Grande:Goi�nia": {
+    "Campo Grande:Goiania": {
       "distancia": 934,
       "tempo": 11.675
     },
@@ -104,7 +104,7 @@
       "distancia": 1453,
       "tempo": 18.1625
     },
-    "Campo Grande:S�o Paulo": {
+    "Campo Grande:Sao Paulo": {
       "distancia": 1014,
       "tempo": 12.675
     },
@@ -114,33 +114,33 @@
     }
   },
   {
-    "Cuiab�:Porto Velho": {
+    "Cuiaba:Porto Velho": {
       "distancia": 1456,
       "tempo": 18.2
     },
-    "Cuiab�:Manaus": {
+    "Cuiaba:Manaus": {
       "distancia": 2357,
       "tempo": 29.4625
     },
-    "Cuiab�:Bel�m": {
+    "Cuiaba:Belem": {
       "distancia": 2941,
       "tempo": 36.7625
     },
-    "Cuiab�:Palmas": {
+    "Cuiaba:Palmas": {
       "distancia": 1784,
       "tempo": 22.3
     },
-    "Cuiab�:Goi�nia": {
+    "Cuiaba:Goiania": {
       "distancia": 934,
       "tempo": 11.675
     },
-    "Cuiab�:Campo Grande": {
+    "Cuiaba:Campo Grande": {
       "distancia": 694,
       "tempo": 8.675
     }
   },
   {
-    "Curitiba:S�o Paulo": {
+    "Curitiba:Sao Paulo": {
       "distancia": 408,
       "tempo": 5.1
     },
@@ -148,17 +148,17 @@
       "distancia": 991,
       "tempo": 12.3875
     },
-    "Curitiba:Florian�polis": {
+    "Curitiba:Florianopolis": {
       "distancia": 300,
       "tempo": 3.75
     }
   },
   {
-    "Florian�polis:Curitiba": {
+    "Florianopolis:Curitiba": {
       "distancia": 300,
       "tempo": 3.75
     },
-    "Florian�polis:Porto Alegre": {
+    "Florianopolis:Porto Alegre": {
       "distancia": 476,
       "tempo": 5.95
     }
@@ -172,7 +172,7 @@
       "distancia": 800,
       "tempo": 10
     },
-    "Fortaleza:Jo�o Pessoa": {
+    "Fortaleza:Joao Pessoa": {
       "distancia": 688,
       "tempo": 8.6
     },
@@ -182,61 +182,61 @@
     }
   },
   {
-    "Goi�nia:Belo Horizonte": {
+    "Goiania:Belo Horizonte": {
       "distancia": 906,
       "tempo": 11.325
     },
-    "Goi�nia:Bras�lia": {
+    "Goiania:Brasilia": {
       "distancia": 209,
       "tempo": 2.6125
     },
-    "Goi�nia:Campo Grande": {
+    "Goiania:Campo Grande": {
       "distancia": 935,
       "tempo": 11.6875
     },
-    "Goi�nia:Cuiab�": {
+    "Goiania:Cuiaba": {
       "distancia": 934,
       "tempo": 11.675
     },
-    "Goi�nia:Palmas": {
+    "Goiania:Palmas": {
       "distancia": 874,
       "tempo": 10.925
     },
-    "Goi�nia:Salvador": {
+    "Goiania:Salvador": {
       "distancia": 1643,
       "tempo": 20.5375
     }
   },
   {
-    "Jo�o Pessoa:Natal": {
+    "Joao Pessoa:Natal": {
       "distancia": 185,
       "tempo": 2.3125
     },
-    "Jo�o Pessoa:Teresina": {
+    "Joao Pessoa:Teresina": {
       "distancia": 1224,
       "tempo": 15.3
     },
-    "Jo�o Pessoa:Recife": {
+    "Joao Pessoa:Recife": {
       "distancia": 120,
       "tempo": 1.5
     }
   },
   {
-    "Macei�:Aracaj�": {
+    "Maceio:Aracaju": {
       "distancia": 294,
       "tempo": 3.675
     },
-    "Macei�:Recife": {
+    "Maceio:Recife": {
       "distancia": 256,
       "tempo": 3.2
     },
-    "Macei�:Salvador": {
+    "Maceio:Salvador": {
       "distancia": 120,
       "tempo": 7.25
     }
   },
   {
-    "Manaus:Bel�m": {
+    "Manaus:Belem": {
       "distancia": 5298,
       "tempo": 66.225
     },
@@ -244,7 +244,7 @@
       "distancia": 785,
       "tempo": 9.8125
     },
-    "Manaus:Cuiab�": {
+    "Manaus:Cuiaba": {
       "distancia": 2357,
       "tempo": 29.4625
     },
@@ -262,21 +262,21 @@
       "distancia": 537,
       "tempo": 6.7125
     },
-    "Natal:Jo�o Pessoa": {
+    "Natal:Joao Pessoa": {
       "distancia": 185,
       "tempo": 2.3125
     }
   },
   {
-    "Palmas:Bel�m": {
+    "Palmas:Belem": {
       "distancia": 1283,
       "tempo": 16.0375
     },
-    "Palmas:Cuiab�": {
+    "Palmas:Cuiaba": {
       "distancia": 1784,
       "tempo": 22.3
     },
-    "Palmas:Goi�nia": {
+    "Palmas:Goiania": {
       "distancia": 874,
       "tempo": 10.925
     },
@@ -288,13 +288,13 @@
       "distancia": 1110,
       "tempo": 2.3125
     },
-    "Palmas:S�o Luis": {
+    "Palmas:Sao Luis": {
       "distancia": 185,
       "tempo": 13.875
     }
   },
   {
-    "Porto Alegre:Florian�polis": {
+    "Porto Alegre:Florianopolis": {
       "distancia": 476,
       "tempo": 5.95
     }
@@ -304,7 +304,7 @@
       "distancia": 901,
       "tempo": 11.2625
     },
-    "Porto Velho:Cuiab�": {
+    "Porto Velho:Cuiaba": {
       "distancia": 1456,
       "tempo": 18.2
     }
@@ -322,11 +322,11 @@
       "distancia": 839,
       "tempo": 10.4875
     },
-    "Recife:Macei�": {
+    "Recife:Maceio": {
       "distancia": 256,
       "tempo": 3.2
     },
-    "Recife:Jo�o Pessoa": {
+    "Recife:Joao Pessoa": {
       "distancia": 120,
       "tempo": 1.5
     }
@@ -342,11 +342,11 @@
     }
   },
   {
-    "Rio de Janeiro:Vit�ria": {
+    "Rio de Janeiro:Vitoria": {
       "distancia": 521,
       "tempo": 6.5125
     },
-    "Rio de Janeiro:S�o Paulo": {
+    "Rio de Janeiro:Sao Paulo": {
       "distancia": 429,
       "tempo": 5.3625
     },
@@ -360,7 +360,7 @@
       "distancia": 1372,
       "tempo": 17.15
     },
-    "Salvador:Goi�nia": {
+    "Salvador:Goiania": {
       "distancia": 1643,
       "tempo": 20.5375
     },
@@ -372,15 +372,15 @@
       "distancia": 1163,
       "tempo": 14.5375
     },
-    "Salvador:Vit�ria": {
+    "Salvador:Vitoria": {
       "distancia": 1202,
       "tempo": 15.025
     },
-    "Aracaj�:Salvador": {
+    "Aracaju:Salvador": {
       "distancia": 356,
       "tempo": 4.45
     },
-    "Salvador:Macei�": {
+    "Salvador:Maceio": {
       "distancia": 632,
       "tempo": 7.9
     },
@@ -390,33 +390,33 @@
     }
   },
   {
-    "S�o Luis:Bel�m": {
+    "Sao Luis:Belem": {
       "distancia": 806,
       "tempo": 10.075
     },
-    "S�o Luis:Teresina": {
+    "Sao Luis:Teresina": {
       "distancia": 446,
       "tempo": 5.575
     },
-    "S�o Luis:Palmas": {
+    "Sao Luis:Palmas": {
       "distancia": 1386,
       "tempo": 17.325
     }
   },
   {
-    "S�o Paulo:Belo Horizonte": {
+    "Sao Paulo:Belo Horizonte": {
       "distancia": 586,
       "tempo": 7.325
     },
-    "S�o Paulo:Campo Grande": {
+    "Sao Paulo:Campo Grande": {
       "distancia": 1014,
       "tempo": 12.675
     },
-    "S�o Paulo:Curitiba": {
+    "Sao Paulo:Curitiba": {
       "distancia": 408,
       "tempo": 5.1
     },
-    "S�o Paulo:Rio de Janeiro": {
+    "Sao Paulo:Rio de Janeiro": {
       "distancia": 429,
       "tempo": 5.3625
     }
@@ -438,21 +438,21 @@
       "distancia": 1163,
       "tempo": 14.5375
     },
-    "Teresina:S�o Luis": {
+    "Teresina:Sao Luis": {
       "distancia": 446,
       "tempo": 5.575
     }
   },
   {
-    "Vit�ria:Rio de Janeiro": {
+    "Vitoria:Rio de Janeiro": {
       "distancia": 521,
       "tempo": 6.5125
     },
-    "Vit�ria:Salvador": {
+    "Vitoria:Salvador": {
       "distancia": 1202,
       "tempo": 15.025
     },
-    "Vit�ria:Belo Horizonte": {
+    "Vitoria:Belo Horizonte": {
       "distancia": 524,
       "tempo": 6.55
     }

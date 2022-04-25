@@ -5,19 +5,19 @@ function gera() {
 	var destino = "capital-destino";
 	var origem = "capital-origem";
 	var capital = [
-		"Aracajú",
-		"Belém",
+		"Aracaju",
+		"Belem",
 		"Belo Horizonte",
 		"Boa Vista",
-		"Brasília",
+		"Brasilia",
 		"Campo Grande",
-		"Cuiabá",
+		"Cuiaba",
 		"Curitiba",
-		"Florianópolis",
+		"Florianopolis",
 		"Fortaleza",
-		"Goiânia",
-		"João Pessoa",
-		"Maceió",
+		"Goiania",
+		"Joao Pessoa",
+		"Maceio",
 		"Manaus",
 		"Natal",
 		"Palmas",
@@ -27,10 +27,10 @@ function gera() {
 		"Rio Branco",
 		"Rio de Janeiro",
 		"Salvador",
-		"São Luis",
-		"São Paulo",
+		"Sao Luis",
+		"Sao Paulo",
 		"Teresina",
-		"Vitória"]
+		"Vitoria"]
 
 	geraElemento(capital, origem);
 	geraElemento(capital, destino);

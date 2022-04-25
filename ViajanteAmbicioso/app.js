@@ -32,7 +32,7 @@ app.post('/rota', (req, res) => {
     passeioCadaCidade = req.body.queroPassear;
     horaPartida = parseFloat(req.body.partidaHora.replace(':', ''));
     var interval = new intervalScheduling()
-    let destinos
+    var destinos
     if (req.body.queroPassear != null) {
         destinos = grafo.menorCaminho(origem, destino, true).concat([origem]).reverse()
     } else {
@@ -53,14 +53,12 @@ app.post('/rota', (req, res) => {
     } else {
         tempoTotal = grafo.tempoTotalUnico
     }
-  //  console.log(tempoTotal)
-  //  console.log(' Sua rota é ' + destinos)
-    var l = 1;
+    var l = 0;
     var resultado = [];
     let x = 0;
     let destinoEjs = []
     while (destinos.length > l) {
-
+        console.log(l)
         var ultimaCidade = destinos[destinos.length - 1];
         var cidadeAtual = destinos[l];
         //  if (passeioCadaCidade != 'on') {cidadeAtual=ultimaCidade}
@@ -69,6 +67,7 @@ app.post('/rota', (req, res) => {
             var obj = passeios[i];
             for (var cidade in obj) {
                 var value = obj[cidade];
+                console.log(destinos)
                 if (cidade == cidadeAtual) {
                     for (var passeio in value) {
                         var value2 = value[passeio];
@@ -91,20 +90,20 @@ app.post('/rota', (req, res) => {
                         if (hor1.fim > hor2.fim) return 1;
                         return 0;
                     })
-
                     if (req.body.queroPassear != null) {
                         var horariosScheduling = interval.calculaScheduling(horarios.length, horarios, tempoTotal[x])
                         for (let index = 0; index < horariosScheduling.length; index++) {
                             resultado.push([destinos[l], `${horariosScheduling[index].passeio}: inicio: ${[horariosScheduling[index].inicio.toString().slice(0, 2), ":", horariosScheduling[index].inicio.toString().slice(2)].join('')}; fim: ${[horariosScheduling[index].fim.toString().slice(0, 2), ":", horariosScheduling[index].fim.toString().slice(2)].join('')}.`])
                         }
                         destinoEjs.push(destinos[l])
-                     //   console.log(tempoTotal[x])
+                        //   console.log(tempoTotal[x])
                     } else if (l == destinos.length - 1) {
                         var horariosScheduling = interval.calculaScheduling(horarios.length, horarios, tempoTotal)
                         for (let index = 0; index < horariosScheduling.length; index++) {
                             resultado.push([destinos[l], `${horariosScheduling[index].passeio}: inicio: ${[horariosScheduling[index].inicio.toString().slice(0, 2), ":", horariosScheduling[index].inicio.toString().slice(2)].join('')}; fim: ${[horariosScheduling[index].fim.toString().slice(0, 2), ":", horariosScheduling[index].fim.toString().slice(2)].join('')}.`])
                         }
                         destinoEjs.push(destinos[l])
+                        console.log(destinoEjs)
                     }
 
 
@@ -123,6 +122,7 @@ app.post('/rota', (req, res) => {
         l++
         x++
     }
+    console.log(destinoEjs)
     res.render('index', { result: resultado, destinos: destinoEjs });
 })
 
