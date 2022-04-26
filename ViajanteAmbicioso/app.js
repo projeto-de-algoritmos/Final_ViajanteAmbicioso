@@ -23,7 +23,7 @@ for (let i = 0; i < rotaWH.length; i++) {
     grafo.adicionaVertice(name, objLiteral);
 }
 app.get('', (req, res) => {
-    res.render('index', { destinos: 0 });
+    res.render('index', { destinos: 0, destinosTotal: 0 });
 });
 var origem, destino, passeioCadaCidade, horaPartida;
 app.post('/rota', (req, res) => {
@@ -122,8 +122,8 @@ app.post('/rota', (req, res) => {
         l++
         x++
     }
-    console.log(destinoEjs)
-    res.render('index', { result: resultado, destinos: destinoEjs });
+    console.log(destino)
+    res.render('index', { result: resultado, destinos: destinoEjs, destinosTotal: destinos });
 })
 
 
